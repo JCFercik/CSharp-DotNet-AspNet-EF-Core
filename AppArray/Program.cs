@@ -50,6 +50,21 @@ namespace AppArray
             Console.WriteLine("----------------------------------------------------------------------------");
 
             // Criando e inicializando arrays multidimensional
+            // Array com 2 dimensões
+            int[,] array2D = new int[,] { { 1, 2 }, { 3, 4 }, { 5, 6 }, { 7, 8 } };
+
+            // Definindo as domensões do array
+            int[,] array2Da = new int[4, 2] { { 1, 2 }, { 3, 4 }, { 5, 6 }, { 7, 8 } };
+
+            // Um array similar com elementos do tipo string
+            string[,] array2Db = new string[3, 2] { { "one", "two" }, { "three", "four" }, { "five", "six" } };
+
+            // Array com três dimensões
+            int[,,] array3D = new int[,,] { { { 1, 2, 3 }, { 4, 5, 6 } }, { { 7, 8, 9 }, { 10, 11, 12 } } };
+
+
+
+
             Console.WriteLine(">>> Array multidimensional");
             Array myArr = Array.CreateInstance(typeof(int), 2, 3, 4);
             for (int i = myArr.GetLowerBound(0); i <= myArr.GetUpperBound(0); i++)
